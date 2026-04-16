@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - db-data:/app/instance
+    environment:
+      - FLASK_ENV=production
+
+volumes:
+  db-data:

@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run All Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/", "-v"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/venv/bin/python"
+    },
+    {
+      "name": "Run Table Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/test_tables.py", "-v"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/venv/bin/python"
+    },
+    {
+      "name": "Run Row Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/test_rows.py", "-v"],
+      "cwd": "${workspaceFolder}",
+      "python": "${workspaceFolder}/venv/bin/python"
+    }
+  ]
+}
